@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    
+    <InternalsVisibleTo Include="ApiWeb" />
+    <InternalsVisibleTo Include="Aplication" />
+    <InternalsVisibleTo Include="Query" />
+
+  </ItemGroup>
+    <ItemGroup>
+    <PublishFile Include="ApiWeb"/>
+    <PublishFile Include="Domains"/>
+    <PublishFile Include="Aplication"/>
+  </ItemGroup>
+
+</Project>
