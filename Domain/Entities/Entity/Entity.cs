@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities.Entity
 {
-    internal abstract class Entity<T>:IEntity<T>
+    public abstract class Entity<T>:IEntity<T>
     {
         /// <summary>
         /// Default Constructor. If TDt is <see cref="System.Guid"/>, the value of the Id property is automatically set.

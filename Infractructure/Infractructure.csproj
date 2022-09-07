@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
     
     <InternalsVisibleTo Include="ApiWeb" />
     <InternalsVisibleTo Include="Aplication" />
@@ -23,9 +19,9 @@
 
   </ItemGroup>
     <ItemGroup>
-    <PublishFile Include="ApiWeb"/>
-    <PublishFile Include="Domains"/>
-    <PublishFile Include="Aplication"/>
+    <PublishFile Include="ApiWeb" />
+    <PublishFile Include="Domains" />
+    <PublishFile Include="Aplication" />
   </ItemGroup>
 
 </Project>

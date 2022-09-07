@@ -21,6 +21,7 @@ namespace ApiWeb.Extensions
         public static void InyectarServicios(this IServiceCollection Services)
         {
             Services.InyectarAppServicios();
+
         }
     }
 }

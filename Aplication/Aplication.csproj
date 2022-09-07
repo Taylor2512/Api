@@ -20,9 +20,13 @@
     <InternalsVisibleTo Include="Query" />
 
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.13.1" />
+  </ItemGroup>
   <ItemGroup>
     <PublishFile Include="ApiWeb" />
-    <PublishFile Include="Domains"/>
+    <PublishFile Include="Domains" />
     <PublishFile Include="Infrastructure" />
   </ItemGroup>
 </Project>

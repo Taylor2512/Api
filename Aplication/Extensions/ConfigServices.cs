@@ -1,4 +1,5 @@
 ﻿using Aplication.AppServices;
+using Aplication.AppServices.Azure;
 using Aplication.AppServices.ExtensionCore;
 using Aplication.AppServices.Persona;
 using Aplication.Interfaces.ICuentaServices;
@@ -20,6 +21,8 @@ namespace Aplication.Extensions
             services.AddScoped<IServiciosCuenta, CuentaServices>();
             services.AddScoped<IServicioUsuarios,UsuarioServices > ();
             services.AddScoped<IExtensionServices, ExtensionServices > ();
+           
+            services.AddScoped<IAzureStorageService, AzureStorageService>();
             return services;
         }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities.Auditoria
 {
-    internal class Auditoria<T>:Entity<T>
+    public class Auditoria<T>:Entity<T>
     {
     } 
 }
