@@ -2,4 +2,4 @@
 
 using ApiWeb.Configuration;
 
-args.Inicializar().Run();
+ await args.Inicializar().RunAsync();
